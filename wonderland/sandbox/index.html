@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--<script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">-->
+    <!-- <link href="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.4.1/sweetalert2.js"></script> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bac à sable</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+    <table style="width: 100%;">
+        <tr>
+            <td colspan="2">Heures porté : </td>
+            <td>
+                <input type="checkbox" id="resetWearTimeCB" onclick="document.getElementById('resetWearTimeBtn').disabled = !this.checked; console.log(this.checked)"/>
+                <button id="resetWearTimeBtn" onclick="changeCpt('wearTime', 'reset')" disabled>Reset</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="wearTime"></td>
+            <td>
+                <progress id="wearTimePB"></progress>
+            </td>
+            <td>
+                <button onclick="changeCpt('wearTime', 'decrement')">-</button>
+                <button onclick="changeCpt('wearTime', 'increment')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"  style="padding-top: 30px;">Lavages : </td>
+        </tr>
+        <tr>
+            <td id="washNbr"></td>
+            <td>
+                <progress id="washNbrPB"></progress>
+            </td>
+            <td>
+                <button onclick="changeCpt('washNbr', 'decrement')">-</button>
+                <button onclick="changeCpt('washNbr', 'increment')">+</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        
+        var maxWearTime = 40
+        var maxWashNbr = 60
+
+        var currentWearTime = window.localStorage.getItem("currentWearTime")
+        if (currentWearTime == null)
+            currentWearTime = 0
+
+        var currentWashNbr = window.localStorage.getItem("currentWashNbr")
+        if (currentWashNbr == null)
+            currentWashNbr = 0
+
+        function initProgressBar(id) {
+            if (id == "wearTimePB") {
+                document.getElementById(id).max = maxWearTime
+                document.getElementById(id).value = currentWearTime
+            }
+            else {
+                document.getElementById(id).max = maxWashNbr
+                document.getElementById(id).value = currentWashNbr
+            }
+        }
+
+        function refreshCpt () {
+            document.getElementById("wearTime").innerHTML = currentWearTime + "/" + maxWearTime
+            initProgressBar("wearTimePB")
+            document.getElementById("washNbr").innerHTML = currentWashNbr + "/" + maxWashNbr
+            initProgressBar("washNbrPB")
+        }
+
+        function changeCpt (target, action) {
+            switch (target) {
+                case 'wearTime':
+                    switch (action) {
+                        case 'increment':
+                            if (currentWearTime < maxWearTime)
+                                currentWearTime++
+                            break;
+                        case 'decrement':
+                            if (currentWearTime > 0)
+                                currentWearTime--
+                            break;
+                        case 'reset':
+                            currentWearTime = 0
+                            break;
+                    } 
+                    window.localStorage.setItem("currentWearTime", currentWearTime)
+                    break;
+                case 'washNbr':
+                    switch (action) {
+                        case 'increment':
+                            if (currentWashNbr < maxWashNbr)
+                                currentWashNbr++
+                            break;
+                        case 'decrement':
+                            if (currentWashNbr > 0)
+                                currentWashNbr--
+                            break;
+                        case 'reset':
+                            currentWashNbr = 0
+                            break;
+                    } 
+                    window.localStorage.setItem("currentWashNbr", currentWashNbr)
+                    break;
+            }
+            refreshCpt()
+        }
+
+        refreshCpt()
+
+    </script>
+
+</body>
+</html>

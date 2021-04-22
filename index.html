@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Auteur et propriétaire Olivier Debray | Tous droits réservés -->
+<html>
+
+<head>
+    <title>Olivier Debray | Développeur</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section class="content activeSection" id="accueil">
+        <div id="accueilTitle"></div>
+        <div id="accueilForeword"></div>
+
+        <div class="navbar" id="navbar">
+            <a id="accueilNav" href="#accueil" class="active">
+                <div>Accueil</div>
+            </a>
+            <a id="cvNav" href="#cv">
+                <div>CV</div>
+            </a>
+            <a id="portfolioNav" href="#portfolio">
+                <div>Portfolio</div>
+            </a>
+            <a id="contactNav" href="#contact">
+                <div>Contact</div>
+            </a>
+        </div>
+
+        <div id="accueilCurrentSituation"></div>
+
+        <div class="triangle top grey"></div>
+        <div class="triangle top white"></div>
+        <div class="triangle top orange"></div>
+
+        <div class="triangle bottom grey"></div>
+        <div class="triangle bottom white"></div>
+        <div class="triangle bottom orange"></div>
+    </section>
+    <section class="content" id="cv">
+        <navbar id="cvNav">
+            <div class="cvNavActive" id="cvNavMain" onclick="cvNavSetActive(this)">
+                <span>CV</span>
+            </div>
+            <div id="cvNavExp" onclick="cvNavSetActive(this)">
+                <span>Expériences</span>
+            </div>
+            <div id="cvNavProj" onclick="cvNavSetActive(this)">
+                <span>Projets</span>
+            </div>
+            <div id="cvNavForm" onclick="cvNavSetActive(this)">
+                <span>Formation</span>
+            </div>
+            <div id="cvNavComp" onclick="cvNavSetActive(this)">
+                <span>Compétences</span>
+            </div>
+            <div id="cvNavMisc" onclick="cvNavSetActive(this)">
+                <span>Divers</span>
+            </div>
+        </navbar>
+        <article id="cvPanels">
+            <div class="cvActive cvPanel" id="cvMain">
+                <p class="sectionTitle"><span>En quelques mots</span></p>
+            </div>
+            <div id="cvExp" class="cvPanel">
+                <p class="sectionTitle"><span>Expériences</span></p>
+                <div id="cvExpContent"></div>
+            </div>
+            <div id="cvProj" class="cvPanel">
+            </div>
+            <div id="cvForm" class="cvPanel">
+            </div>
+            <div id="cvComp" class="cvPanel">
+            </div>
+            <div id="cvMisc" class="cvPanel">
+            </div>
+        </article>
+    </section>
+    <section class="content" id="portfolio">
+        <div id="portfolioHead">
+            <div id="portfolioTitle">Portfolio</div>
+            <div id="portfolioSectionsAndProjects">
+                <div id="portfolioSections"></div>
+                <div id="portfolioProjectsWrapper">
+                    <svg onclick="changeActiveProject('prev')" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="left bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                    </svg>
+                    <div id="portfolioProjects"></div>
+                    <svg onclick="changeActiveProject('next')" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="right bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div id="portfolioMedia">
+            <button class="portfolioNavBtn prev" onclick="changeActiveMedia('prev')">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <div id="portfolioMediaWrapper"></div>
+            <button class="portfolioNavBtn next" onclick="changeActiveMedia('next')">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div id="portfolioIndicators">
+
+            </div>
+        </div>
+        <div id="portfolioText">
+            <div id="portfolioProjectTitle"></div>
+            <div id="portfolioProjectContext"></div>
+            <div id="portfolioProjectDesc"></div>
+        </div>
+
+        <div id="mediaModal" onclick="this.classList.remove('activeModal')">
+            
+        </div>
+    </section>
+    <section class="content" id="contact">
+        <div id="contactPanel">
+            <p class="sectionTitle">Contact</p>
+            <p>
+                Vous souhaitez me contacter ?<br />
+                Vous pouvez utiliser les moyens suivants :
+            </p>
+            <div id="contactDiv">
+                <div class="canal">
+                    <a class="contactTile" href="mailto://olivier.debray@viacesi.fr">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                        </svg>
+                    </a>
+                    <div>olivier.debray@viacesi.fr</div>
+                </div>
+                <div class="canal">
+                    <a class="contactTile" href="mailto://olivier.debray@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                        </svg>
+                    </a>
+                    <div>olivier.debray@gmail.com</div>
+                </div>
+                <div class="canal">
+                    <a class="contactTile" href="http://www.linkedin.com/in/olivier-debray-05">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
+                    <div>Profil LinkedIn</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a onclick="toggleLegal()">Mentions légales</a> | 2021 © Tous droits réservés
+        </div>
+        <div id="legalOverlay">
+            <div id="legalPanel">
+                <a id="closeLegal" onclick="toggleLegal()">&#128473;</a>
+                <h1>
+                    Mentions légales
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

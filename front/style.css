@@ -1,0 +1,104 @@
+* {-moz-box-sizing: border-box; box-sizing: border-box;}
+
+html
+{
+    font-family: "Century Gothic", serif;
+    height: 100%;
+}
+
+body
+{
+    text-align: center;
+    margin: 0;
+    min-height: 100%;
+
+    position: relative;
+    padding-bottom: 75px;
+}
+
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a
+{
+    margin: auto;
+    flex: auto;
+
+    text-decoration: none;
+    color: white;
+
+    border-top: 2px solid dimgrey;
+    border-bottom: 2px solid dimgrey;
+    padding: 5px;
+
+    background: grey;
+    text-align: center;
+}
+
+nav a:hover
+{
+    color: grey;
+    background: white;
+}
+
+footer
+{
+    display: flex;
+
+    background: grey;
+
+    justify-content: space-around;
+
+    margin-top: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    text-decoration: none;
+    color: white;
+
+    border-top: 2px solid dimgray;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover
+{
+    border: 2px inset white;
+}
+
+footer div
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 400px)
+{
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer #contactNumérique
+    {
+        order: 0;
+    }
+
+    footer #législation
+    {
+        order: 2;
+    }
+}

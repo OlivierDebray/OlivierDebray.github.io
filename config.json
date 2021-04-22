@@ -1,0 +1,648 @@
+{
+    "front": {
+        "accueil": {
+            "title": [
+                "Bienvenue sur ce site !"
+            ],
+            "foreword": [
+                "Je suis Olivier Debray, jeune étudiant en dernière année de mes études d'Ingénieur spécialité Informatique.",
+                "Vous pourrez retrouver ici mon CV détaillé, un portfolio de mes différents projets et réalisations, ainsi que mes informations de contact !"
+            ],
+            "currentSituation": [
+                "Je suis actuellement en stage de 5<sup>ème</sup> année au sein de l'Agirc-Arrco."
+            ]
+        },
+        "cv": {
+            "main": {
+                "desc": [
+                    "Etudiant en dernière année du cycle Ingénieur spécialité Informatique à l'école d'ingénieurs CESI à Orléans, je suis spécialisé en développement logiciel et web (fullstack).",
+                    "J'ai également suivi une option Data Science et Machine Learning durant la dernière année de ma formation.",
+                    "D'un naturel curieux, j'ai pu développer un certain panel de compétences grâce à mes divers stages et à mes projets personnels et scolaires."
+                ],
+                "footer": [
+                    "Les différentes sections auxquelles vous pourrez accéder grâce au menu de gauche vous détailleront les différents éléments de mon CV.",
+                    "<a target=\"_blank\" id=\"cvPdfLink\">Vous pouvez également retrouver mon CV au format PDF.</a>"
+                ]
+            },
+            "exp": [
+                {
+                    "time": "Septembre 2019 - Février 2020",
+                    "title": "Stage de <b>vingt semaines</b> au sein de <b>Skwarel</b> (Belgique)",
+                    "sections": [
+                        {
+                            "title": "Réalisations",
+                            "items": [
+                                "Conception et développement full stack (AngularJS + Java Spring) d’une solution de gestion et de création de factures",
+                                "Gestion du projet en autonomie au sein d’une équipe Agile Scrum"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "time": "Janvier 2019 - Avril 2019",
+                    "title": "Stage de <b>quatorze semaines</b> au sein de <b>l’Agirc-Arrco</b>",
+                    "sections": [
+                        {
+                            "title": "Réalisations",
+                            "items": [
+                                "Conception et implémentation de solutions automatisées pour plus de 200 tests logiciels",
+                                "Conception et développement de scripts Power Shell pour la gestion de fichiers, le dialogue avec des Web Services et la génération de rapports"
+                            ]
+                        },
+                        {
+                            "title": "Compétences travaillées",
+                            "items": [
+                                "Travail au sein d'un projet Agile Scrum",
+                                "Utilisation de nombreux outils : Squash TA, Squash TM, Jenkins, Jira, SVN, Eclipse, ...",
+                                "Recherche de solutions et réflexion critique sur leur mise en place"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "time": "Avril 2018 - Juin 2018",
+                    "title": "Stage de <b>onze semaines</b> au sein de <b>MuOoh</b>",
+                    "sections": [
+                        {
+                            "title": "Réalisations",
+                            "items": [
+                                "Reprise du développement de l'application mobile proposée par la société",
+                                "Amélioration continue des autres solutions informatiques de la société (Web Service et base de données)",
+                                "Développement intégral d'une autre application mobile non distribuée publiquement"
+                            ]
+                        },
+                        {
+                            "title": "Compétences travaillées",
+                            "items": [
+                                "Développement de solutions en HTML, CSS, JavaScript, PHP",
+                                "Maintenance et gestion de l'évolution d'une base de données PostgreSQL",
+                                "Publication et mise à jour d'une application sur le Google Play Store",
+                                "Recherche de solutions techniques et réflexion critique de leur mise en place",
+                                "Rétro-ingénierie de systèmes informatiques préexistants"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "time": "Septembre 2017 - Octobre 2017",
+                    "title": "Stage de <b>huit semaines</b> au sein d’<b>Alstef Automation</b>",
+                    "sections": [
+                        {
+                            "title": "Réalisations",
+                            "items": [
+                                "Création d'un outil de visualisation de logs serveur",
+                                "Développement d'une application de visualisation de plannings d'astreinte",
+                                "Création d'un outil d'aide à la gestion de service"
+                            ]
+                        },
+                        {
+                            "title": "Compétences travaillées",
+                            "items": [
+                                "Utilisation de Microsoft Power BI",
+                                "C# / .NET (Regex, LINQ, log4net)",
+                                "Gestion de versions avec Mercurial et TortoiseHG"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "proj": [
+                {
+                    "sectionTitle": "Projets scolaires",
+                    "items": [
+                        "Réalisation d’une solution distribuée de déchiffrement, s’appuyant sur <b>Java</b>, <b>Python</b> et <b>C#</b> sur <b>5 machines virtuelles</b> (<b>chef de projet</b>)",
+                        "Réalisation d’une <b>infrastructure réseau complète</b> sur <b>Cisco Packet Tracer</b>",
+                        "Réalisation d’un logiciel de <b>résolution de graphes</b> hamiltonien en <b>Python</b>"
+                    ]
+                },
+                {
+                    "sectionTitle": "Projets personnels",
+                    "items": [
+                        "<b>Startup Weekend</b> spécial <b>Blockchain</b> en janvier 2017",
+                        "<b>24H de l’Innovation Aéronautique</b> en novembre 2018",
+                        "<b>Programmes Python</b>, <b>C#</b> et projets <b>Arduino</b>",
+                        "<b>Sites web/applications</b> en <b>HTML/CSS/JS</b> utilisant <b>PHP/MySQL/Node.js</b>"
+                    ]
+                }
+            ],
+            "form": [
+                {
+                    "sectionTitle": "Formation",
+                    "items": [
+                        {
+                            "time": "2016-2021",
+                            "name": "CESI Ecole d’Ingénieurs",
+                            "city": "Orléans",
+                            "desc": [
+                                "Diplôme d'Ingénieur Informaticien",
+                                "Spécialité développement",
+                                "Option Data Science & Machine Learning"
+                            ]
+                        },
+                        {
+                            "time": "2013-2016",
+                            "name": "LEGT Ste Croix St Euverte",
+                            "city": "Orléans",
+                            "desc": [
+                                "Filière Scientifique – Sciences de L’ingénieur (SSI)",
+                                "Spécialité Informatique et Sciences du Numérique (ISN)",
+                                "Baccalauréat obtenu avec Mention Bien"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "comp": [
+                {
+                    "sectionTitle": "Développement",
+                    "languages": [
+                        {
+                            "name": "C#",
+                            "level": 2
+                        },
+                        {
+                            "name": "Java",
+                            "level": 3
+                        },
+                        {
+                            "name": "HTML/ CSS",
+                            "level": 4
+                        },
+                        {
+                            "name": "JavaScript",
+                            "level": 4
+                        },
+                        {
+                            "name": "PHP",
+                            "level": 2
+                        },
+                        {
+                            "name": "C",
+                            "level": 2
+                        },
+                        {
+                            "name": "Python",
+                            "level": 3
+                        }
+                    ],
+                    "frameworks": [
+                        "Angular",
+                        "Bootstrap",
+                        "Spring",
+                        ".NET"
+                    ],
+                    "miscs": [
+                        "Expressions régulières",
+                        "TypeScript",
+                        "Sass",
+                        "..."
+                    ]
+                },
+                {
+                    "sectionTitle": "Logiciels",
+                    "items": [
+                        {
+                            "type": "Bureautique et IDE",
+                            "items": [
+                                {
+                                    "name": "Suite Office",
+                                    "logo": "office.png",
+                                    "bg": "#d83b0180"
+                                },
+                                {
+                                    "name": "Power BI",
+                                    "logo": "powerbi.png",
+                                    "bg": "#e6b710"
+                                },
+                                {
+                                    "name": "Suite Jetbrains",
+                                    "logo": "jetbrains.png",
+                                    "bg": "#00000080"
+                                },
+                                {
+                                    "name": "Visual Studio",
+                                    "logo": "vs.png",
+                                    "bg": "#65207680"
+                                },
+                                {
+                                    "name": "Eclipse",
+                                    "logo": "eclipse.png",
+                                    "bg": "#2c225580"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Systèmes d'exploitation",
+                            "items": [
+                                {
+                                    "name": "Windows",
+                                    "logo": "windows.png",
+                                    "bg": "#086dbe80"
+                                },
+                                {
+                                    "name": "Debian",
+                                    "logo": "debian.png",
+                                    "bg": "#d7075180"
+                                },
+                                {
+                                    "name": "Ubuntu",
+                                    "logo": "ubuntu.png",
+                                    "bg": "#dd481480"
+                                },
+                                {
+                                    "name": "Rasperry Pi OS",
+                                    "logo": "raspberry.png",
+                                    "bg": "#bd084080"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "VM et conteneurs",
+                            "items": [
+                                {
+                                    "name": "VMWare",
+                                    "logo": "vmware.png",
+                                    "bg": "#ff7f1580"
+                                },
+                                {
+                                    "name": "Kubernetes",
+                                    "logo": "kubernetes.png",
+                                    "bg": "#326ce580"
+                                },
+                                {
+                                    "name": "Rancher",
+                                    "logo": "rancher.png",
+                                    "bg": "#59595b80"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Bases de données",
+                            "items": [
+                                {
+                                    "name": "PostgreSQL",
+                                    "logo": "pgsql.png",
+                                    "bg": "#33679180"
+                                },
+                                {
+                                    "name": "MySQL",
+                                    "logo": "mysql.png",
+                                    "bg": "#f2911180"
+                                },
+                                {
+                                    "name": "MongoDB",
+                                    "logo": "mongodb.png",
+                                    "bg": "#412f1f80"
+                                },
+                                {
+                                    "name": "Access",
+                                    "logo": "access.png",
+                                    "bg": "#a3363980"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Gestion de versions",
+                            "items": [
+                                {
+                                    "name": "Git",
+                                    "logo": "git.png",
+                                    "bg": "#3f2f0080"
+                                },
+                                {
+                                    "name": "Subversion",
+                                    "logo": "svn.png",
+                                    "bg": "#809cc980"
+                                },
+                                {
+                                    "name": "Mercurial",
+                                    "logo": "hg.png",
+                                    "bg": "#99999980"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Edition multimédia",
+                            "items": [
+                                {
+                                    "name": "Photoshop",
+                                    "logo": "photoshop.png",
+                                    "bg": "#2daaff80"
+                                },
+                                {
+                                    "name": "Première",
+                                    "logo": "premiere.png",
+                                    "bg": "#9a9aff80"
+                                },
+                                {
+                                    "name": "OpenShot",
+                                    "logo": "openshot.png",
+                                    "bg": "#62a5d580"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "sectionTitle": "Langues",
+                    "items": [
+                        {
+                            "lang": "FR",
+                            "name": "Français",
+                            "desc": [
+                                "Langue maternelle"
+                            ]
+                        },
+                        {
+                            "lang": "GB",
+                            "name": "Anglais",
+                            "desc": [
+                                "Niveau C1",
+                                "Pratique courante",
+                                "TOEIC : 990/990 (2020)"
+                            ]
+                        },
+                        {
+                            "lang": "ES",
+                            "name": "Espagnol",
+                            "desc": [
+                                "Niveau B1",
+                                "Pratique occasionnelle"
+                            ]
+                        },
+                        {
+                            "lang": "JP",
+                            "name": "Japonais",
+                            "desc": [
+                                "Débutant"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "misc": [
+                {
+                    "sectionTitle": "Centres d'intérêts",
+                    "items": [
+                        "La musique étant l'une de mes passions, je pratique le piano, le violon et d'autres instruments en autodidacte.",
+                        "Je m'intéresse à divers types de littérature (scientifique, fantastique, historique, …), à la musique, aux nouvelles technologies et aux sciences.",
+                        "Lorsque j'en ai l'occasion, il m'arrive également de pratiquer la peinture et de faire un peu de menuiserie."
+                    ]
+                }
+            ]
+        },
+        "portfolio": {
+            "sections": [
+                "Sites Web",
+                "Applications mobiles",
+                "Logiciels",
+                "Autres"
+            ],
+            "projects": [
+                {
+                    "title": "Réveil simulateur d'aube",
+                    "date": "2021",
+                    "types": [
+                        3
+                    ],
+                    "context": "",
+                    "desc": [
+                        "foo",
+                        "bar",
+                        "toto"
+                    ],
+                    "medias": [
+                        "dawnAlarm.png"
+                    ]
+                },
+                {
+                    "title": "Projet Machine Learning",
+                    "date": "2020",
+                    "types": [
+                        2
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "ds1.png",
+                        "ds2.png",
+                        "ds3.png",
+                        "ds4.png"
+                    ]
+                },
+                {
+                    "title": "Eclairage musical pour piano",
+                    "date": "2020",
+                    "types": [
+                        3
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": []
+                },
+                {
+                    "title": "Application de réalité augmentée",
+                    "date": "2020",
+                    "types": [
+                        1
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "ar1.mp4",
+                        "ar2.mp4",
+                        "ar3.jpg"
+                    ]
+                },
+                {
+                    "title": "Application de facturation",
+                    "date": "2019",
+                    "types": [
+                        0
+                    ],
+                    "context": "Stage",
+                    "desc": [
+                        "Dans le cadre d'un stage réalisé dans l'entreprise Skwarel lors de ma 4<sup>ème</sup> année de formation, j'ai été chargé de la conception et réalisation d'une application de facturation, et de son intégration au sein de l'outil développé par la société."
+                    ],
+                    "medias": [
+                        "skwarel1.png",
+                        "skwarel2.png",
+                        "skwarel3.png",
+                        "skwarel4.png",
+                        "skwarel5.png"
+                    ]
+                },
+                {
+                    "title": "Site vitrine et d'e-commerce",
+                    "date": "2018",
+                    "types": [
+                        0
+                    ],
+                    "context": "",
+                    "desc": [
+                        "Page d'accueil d'un site Web réalisé dans le cadre de mes cours, incluant -entre autres- des fonctions de gestion de comptes, de publication de contenu et de modération."
+                    ],
+                    "medias": [
+                        "bde_exia.jpg"
+                    ]
+                },
+                {
+                    "title": "Application mobile MuOoh",
+                    "date": "2018",
+                    "types": [
+                        1
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "muooh.jpg"
+                    ]
+                },
+                {
+                    "title": "Quizz",
+                    "date": "2018",
+                    "types": [
+                        0,
+                        1
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "quizz.jpg"
+                    ]
+                },
+                {
+                    "title": "BiblioManager",
+                    "date": "2018",
+                    "types": [
+                        2
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "bibliomanager1.png"
+                    ]
+                },
+                {
+                    "title": "Site web Diphylleia",
+                    "date": "2017",
+                    "types": [
+                        0
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "diphylleia.jpg"
+                    ]
+                },
+                {
+                    "title": "Projet Atelyn",
+                    "date": "2017",
+                    "types": [
+                        0
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "atelyn.jpg"
+                    ]
+                },
+                {
+                    "title": "Logiciel de gestion d'astreintes",
+                    "date": "2017",
+                    "types": [
+                        2
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "alstef1.png"
+                    ]
+                },
+                {
+                    "title": "Projet ExoLife",
+                    "date": "2017",
+                    "types": [
+                        2
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "exolife1.png",
+                        "exolife2.png",
+                        "exolife3.png",
+                        "exolife4.png",
+                        "exolife5.png"
+                    ]
+                },
+                {
+                    "title": "Asservissement de système",
+                    "date": "2017",
+                    "types": [
+                        2,
+                        3
+                    ],
+                    "context": "",
+                    "desc": [],
+                    "medias": [
+                        "pmf1.jpg",
+                        "pmf2.jpg",
+                        "pmf3.png"
+                    ]
+                }
+            ]
+        },
+        "contact": {
+            "legal": [
+                {
+                    "sectionTitle": "Edition et développement",
+                    "items": [
+                        "Olivier DEBRAY",
+                        "Email: olivier.debray@gmail.com"
+                    ]
+                },
+                {
+                    "sectionTitle": "Hébergement",
+                    "items": [
+                        "Hébergeur: GitHub Pages",
+                        "Adresse: GitHub, 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States",
+                        "Numéro de téléphone: +1 (877) 448-4820"
+                    ]
+                },
+                {
+                    "sectionTitle": "Propriété intellectuelle",
+                    "items": [
+                        "L'auteur du site est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles sur le site, notamment les textes, images, graphismes, logo, icônes, sons, logiciels.",
+                        "Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l’accord exprès par écrit de l'auteur. Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle. Le non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et pénale du contrefacteur. En outre, les propriétaires des Contenus copiés pourraient intenter une action en justice à votre encontre."
+                    ]
+                }
+            ]
+        }
+    },
+    "wonderlandModules": [
+        {
+            "name": "journuit",
+            "title": "Jour / Nuit"
+        },
+        {
+            "name": "memory",
+            "title": "Memory"
+        },
+        {
+            "name": "API%20WordPress",
+            "title": "Api WordPress"
+        },
+        {
+            "name": "pictoGuesser",
+            "title": "PictoGuesser"
+        },
+        {
+            "name": "sandbox",
+            "title": "Sandbox"
+        },
+        {
+            "name": "Anniv Quentin",
+            "title": "Anniv Quentin"
+        }
+    ]
+}

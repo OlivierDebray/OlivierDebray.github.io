@@ -1,0 +1,49 @@
+.button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #c0c0c0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover { background-color: #606060 }
+
+.button:active {
+    background-color: #606060;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#text
+{
+    width: 75vh;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.ligne *
+{
+    display: inline-flex;
+    border: 2px solid black;
+    background: grey;
+
+    cursor: pointer;
+}
+
+.ligne img
+{
+    visibility: hidden;
+    -moz-user-select: none;
+    user-select: none;
+
+    height: 20vh;
+
+    cursor: auto;
+}

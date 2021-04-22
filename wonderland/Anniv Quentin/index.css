@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+@keyframes flash {
+    0% { background-color: grey; font-style: italic; }
+    100% { background-color: blue; font-weight: bold; }
+}
+#button {
+    color: whitesmoke;
+    text-decoration: underline;
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.discours {
+    background-image: url("assets/images/bgrd.jpg");
+    background-repeat: repeat;
+    background-position-x: center;
+    background-size: 50vh;
+}
+
+.discours p {
+    font-size: large;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}

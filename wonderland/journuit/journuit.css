@@ -1,0 +1,15 @@
+#buttons
+{
+    padding-top: 20px;
+}
+
+.button
+{
+    background: black;
+    color: white;
+    padding: 5px 5vw;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+}
