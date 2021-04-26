@@ -608,9 +608,11 @@ body {
                             padding-bottom: 0.5ch;
 
                             img {
-                                position: relative;
-                                top: 0.5em;
-                                padding-right: 1ch;
+                                // position: relative;
+                                // top: 0.5em;
+                                // padding-right: 1ch;
+                                max-width: 32px;
+                                margin-right: 1ch;
                             }
                         }
                     }
@@ -841,6 +843,7 @@ body {
         align-items: center;
         text-align: center;
         padding: 2em;
+        overflow: auto;
 
         background: linear-gradient(lighten($color: $navbar-bg-color, $amount: 5), $navbar-bg-color);
 

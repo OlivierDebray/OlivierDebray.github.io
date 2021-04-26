@@ -506,9 +506,8 @@ body.toggledLegal #contact {
   padding-bottom: 0.5ch;
 }
 #cv #cvPanels .cvPanel#cvComp .cvCompLangSection .cvCompLang .cvCompLangName img {
-  position: relative;
-  top: 0.5em;
-  padding-right: 1ch;
+  max-width: 32px;
+  margin-right: 1ch;
 }
 #cv #cvPanels .cvPanel#cvMisc .cvMiscItem {
   line-height: 1.5;
@@ -696,6 +695,7 @@ body.toggledLegal #contact {
   align-items: center;
   text-align: center;
   padding: 2em;
+  overflow: auto;
   background: linear-gradient(#626262, #555);
 }
 #portfolio #portfolioText h2 {

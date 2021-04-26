@@ -272,7 +272,7 @@ function fillComp() {
             section.items.forEach(item => {
                 html += '<div class="cvCompLang">' +
                     '<div class="cvCompLangName">' +
-                    '<img src="https://www.countryflags.io/' + item.lang + '/flat/32.png"/>' +
+                    '<img src="/assets/lang/' + item.lang + '.png" size="32"/>' +
                     item.name + 
                     '</div>'
                 item.desc.forEach(line => {

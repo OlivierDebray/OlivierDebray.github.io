@@ -354,7 +354,7 @@
                             ]
                         },
                         {
-                            "lang": "GB",
+                            "lang": "EN",
                             "name": "Anglais",
                             "desc": [
                                 "Niveau C1",
@@ -405,14 +405,9 @@
                     "types": [
                         3
                     ],
-                    "context": "",
-                    "desc": [
-                        "foo",
-                        "bar",
-                        "toto"
-                    ],
+                    "context": "Projet personnel",
+                    "desc": [],
                     "medias": [
-                        "dawnAlarm.png"
                     ]
                 },
                 {
@@ -421,7 +416,7 @@
                     "types": [
                         2
                     ],
-                    "context": "",
+                    "context": "Projet scolaire",
                     "desc": [],
                     "medias": [
                         "ds1.png",
@@ -436,7 +431,7 @@
                     "types": [
                         3
                     ],
-                    "context": "",
+                    "context": "Projet personnel",
                     "desc": [],
                     "medias": []
                 },
@@ -446,7 +441,7 @@
                     "types": [
                         1
                     ],
-                    "context": "",
+                    "context": "Projet scolaire",
                     "desc": [],
                     "medias": [
                         "ar1.mp4",
@@ -478,7 +473,7 @@
                     "types": [
                         0
                     ],
-                    "context": "",
+                    "context": "Projet scolaire",
                     "desc": [
                         "Page d'accueil d'un site Web réalisé dans le cadre de mes cours, incluant -entre autres- des fonctions de gestion de comptes, de publication de contenu et de modération."
                     ],
@@ -492,7 +487,7 @@
                     "types": [
                         1
                     ],
-                    "context": "",
+                    "context": "Stage",
                     "desc": [],
                     "medias": [
                         "muooh.jpg"
@@ -505,7 +500,7 @@
                         0,
                         1
                     ],
-                    "context": "",
+                    "context": "Projet personnel",
                     "desc": [],
                     "medias": [
                         "quizz.jpg"
@@ -517,7 +512,7 @@
                     "types": [
                         2
                     ],
-                    "context": "",
+                    "context": "Projet personnel",
                     "desc": [],
                     "medias": [
                         "bibliomanager1.png"
@@ -529,7 +524,7 @@
                     "types": [
                         0
                     ],
-                    "context": "",
+                    "context": "Startup Week-end",
                     "desc": [],
                     "medias": [
                         "diphylleia.jpg"
@@ -541,7 +536,7 @@
                     "types": [
                         0
                     ],
-                    "context": "",
+                    "context": "Projet personnel",
                     "desc": [],
                     "medias": [
                         "atelyn.jpg"
@@ -553,7 +548,7 @@
                     "types": [
                         2
                     ],
-                    "context": "",
+                    "context": "Stage",
                     "desc": [],
                     "medias": [
                         "alstef1.png"
@@ -565,7 +560,7 @@
                     "types": [
                         2
                     ],
-                    "context": "",
+                    "context": "Projet scolaire",
                     "desc": [],
                     "medias": [
                         "exolife1.png",
@@ -582,7 +577,7 @@
                         2,
                         3
                     ],
-                    "context": "",
+                    "context": "Projet scolaire",
                     "desc": [],
                     "medias": [
                         "pmf1.jpg",
