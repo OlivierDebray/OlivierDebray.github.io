@@ -45,16 +45,45 @@
             </td>
         </tr>
     </table>
+    <br>
+
+    <table style="width: 100%;">
+        <tr>
+            <td colspan="3">Paramètres</td>
+        </tr>
+        <tr>
+            <td>Heures max : </td>
+            <td>
+                <input type="number" id="maxWearTimeIn" oninput="changeCpt('maxWearTime', 'set', this.value)"/>
+            </td>
+            <td>
+                <button onclick="changeCpt('maxWearTime', 'decrement')">-</button>
+                <button onclick="changeCpt('maxWearTime', 'increment')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Lavages max : </td>
+            <td>
+                <input type="number" id="maxWashNbrIn" oninput="changeCpt('maxWashNbr', 'set', this.value)"/>
+            </td>
+            <td>
+                <button onclick="changeCpt('maxWashNbr', 'decrement')">-</button>
+                <button onclick="changeCpt('maxWashNbr', 'increment')">+</button>
+            </td>
+        </tr>
+    </table>
 
     <script>
-        
-        var maxWearTime = 40
-        var maxWashNbr = 60
 
+        var maxWearTime = window.localStorage.getItem("maxWearTime")
+        if (maxWearTime == null)
+            maxWearTime = 40
+        var maxWashNbr = window.localStorage.getItem("maxWashNbr")
+        if (maxWashNbr == null)
+            maxWashNbr = 60
         var currentWearTime = window.localStorage.getItem("currentWearTime")
         if (currentWearTime == null)
             currentWearTime = 0
-
         var currentWashNbr = window.localStorage.getItem("currentWashNbr")
         if (currentWashNbr == null)
             currentWashNbr = 0
@@ -75,9 +104,11 @@
             initProgressBar("wearTimePB")
             document.getElementById("washNbr").innerHTML = currentWashNbr + "/" + maxWashNbr
             initProgressBar("washNbrPB")
+            document.getElementById("maxWearTimeIn").value = maxWearTime
+            document.getElementById("maxWashNbrIn").value = maxWashNbr
         }
 
-        function changeCpt (target, action) {
+        function changeCpt (target, action, value=undefined) {
             switch (target) {
                 case 'wearTime':
                     switch (action) {
@@ -110,6 +141,40 @@
                             break;
                     } 
                     window.localStorage.setItem("currentWashNbr", currentWashNbr)
+                    break;
+                case 'maxWearTime':
+                    switch (action) {
+                        case 'increment':
+                            maxWearTime++
+                            break;
+                        case 'decrement':
+                            maxWearTime--
+                            break;
+                        case 'set':
+                            maxWearTime = value
+                            break;
+                        case 'reset': 
+                            currentWashNbr = 0
+                            break;
+                    }
+                    window.localStorage.setItem("maxWearTime", maxWearTime)
+                    break;
+                case 'maxWashNbr':
+                    switch (action) {
+                        case 'increment':
+                            maxWashNbr++
+                            break;
+                        case 'decrement':
+                            maxWashNbr--
+                            break;
+                        case 'set':
+                            maxWashNbr = value
+                            break;
+                        case 'reset': 
+                            currentWashNbr = 0
+                            break;
+                    }
+                    window.localStorage.setItem("maxWashNbr", maxWashNbr)
                     break;
             }
             refreshCpt()
